@@ -7,5 +7,6 @@
     <title>Test N1</title>
     <link rel="stylesheet" href="./src/main.css">
     <link rel="stylesheet" href="./src/loadFile.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="./src/index.js"></script>
 </head>
