@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
 
-        axios.post('/Controller/RequestsController.php', data, {
+        axios.post('/test1/Controller/RequestsController.php', data, {
             headers
         })
             .then(response => {

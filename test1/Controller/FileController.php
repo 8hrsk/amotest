@@ -17,6 +17,6 @@ class FileController {
     }
 
     private function read() {
-        return file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/files/' . $this->$fileName, true); // Возвращаем содержиоме файла
+        return file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/test1/files/' . $this->$fileName, true); // Возвращаем содержиоме файла
     }
 }
