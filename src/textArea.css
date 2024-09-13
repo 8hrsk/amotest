@@ -1,0 +1,30 @@
+.textResult {
+    color: aliceblue;
+    width: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #120052;
+}
+
+.textResult:focus {
+    outline: none;
+}
+
+.textResult::-webkit-scrollbar {
+    width: 5px;
+    padding: 1px;
+}
+
+.textResult::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.textResult::-webkit-scrollbar-thumb {
+    background-color: #0c0038;;
+    border-radius: 10px;
+}

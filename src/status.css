@@ -1,0 +1,15 @@
+.status {
+    margin: 20px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.success {
+    background-color: green;
+}
+
+.failure {
+    background-color: red;
+}

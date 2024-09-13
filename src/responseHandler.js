@@ -1,6 +1,7 @@
 class ResponseHandler {
 
     constructor(response) {
-        console.log(response);
+        this.StatusBar = new Status(eval(response.result));
+        this.StatusBar.render();
     }
 }
