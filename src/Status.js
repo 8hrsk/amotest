@@ -12,6 +12,8 @@ class Status {
         } else {
             this.failure();
         }
+
+        this.render();
     }
 
     success() {

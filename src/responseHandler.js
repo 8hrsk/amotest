@@ -2,6 +2,9 @@ class ResponseHandler {
 
     constructor(response) {
         this.StatusBar = new Status(eval(response.result));
-        this.StatusBar.render();
+
+        if (response.result === 'false') return;
+
+        this.RegExpValid = new RegExpValid(response.content);
     }
 }
