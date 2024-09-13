@@ -26,18 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
         fileInput.files = e.dataTransfer.files
     })
 
-    loadBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        const file = fileInput.files[0];
-
-        let data = new FormData();
-        data.append('file', file);
-
-        // const reader = new FileReader();
-        // reader.onload = (e) => {
-        //     console.log(e.target.result);
-        // }
-        // reader.readAsText(file);
+    loadBtn.addEventListener("click", () => {
+        const data = new FormData();
+        data.append('file', fileInput.files[0]);
 
         const headers = {
             'process-data': 'false',
@@ -49,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             headers
         })
             .then(response => {
-                console.log(response);
+                new ResponseHandler(response.data);
             })
             .catch(error => {
                 console.log(error);
